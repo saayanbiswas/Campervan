@@ -23,14 +23,14 @@
         </div>
         <h1 style="text-align: center">User Log In</h1>
         <div id="LoginBox" >
-            <form method="POST" action="partials/verifier.php">
+            <center><form method="POST" action="partials/verifier.php">
                 
                 <input type="text" class="loginInput" placeholder="Username" name="Userid" >
                 </br>
                 <input type="text" class="loginInput" placeholder="Password" name="Password">
                 </br>
                 <button type="submit" id="loginBtn">Login</button>
-            </form>
+            </form></center>
         </div>
 
     </body>
