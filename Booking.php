@@ -18,13 +18,13 @@
         ?>
         <center>
         <div id="BookingForm">
-        <form action="/action_page.php">
+        <form action="./Billing.php" method="POST">
             <label class="BookingLabels" for="Hub">Select nearest renting hub</label>
             <select name="Hub">
                 <option value="Goa">Goa</option>
-                <option value="Ladakh"></option>
-                <option value="Rishikesh">Item 3</option>
-                <option value="Jaisalmer">Item 4</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Rishikesh">Rishikesh</option>
+                <option value="Jaisalmer">Jaisalmer</option>
             </select>
         </br></br>
             <label class="BookingLabels" for="Rent_Date">Date of Rent:</label>

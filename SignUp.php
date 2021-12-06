@@ -21,15 +21,21 @@
                 <li><a href="Contact Us.php">Contact Us</a></li>
             </ul>
         </div>
-        <h1 style="text-align: center">User Log In</h1>
+        <h1 style="text-align: center">Create a new account</h1>
         <div id="LoginBox" >
-            <center><form method="POST" action="partials/verifier.php">
+            <center><form method="POST" action="partials/creator.php">
                 
+                <input type="text" class="loginInput" placeholder="Full Name" name="Name">
+                </br>
+                <input type="text" class="loginInput" placeholder="Email" name="Email">
+                </br>
                 <input type="text" class="loginInput" placeholder="Username" name="Userid" >
                 </br>
                 <input type="text" class="loginInput" placeholder="Password" name="Password">
                 </br>
-                <button type="submit" id="loginBtn">Login</button>
+                <input type="number" class="loginInput" placeholder="Contact" name="Contact">
+                </br>
+                <button type="submit" id="loginBtn">Sign Up</button>
             </form></center>
         </div>
 

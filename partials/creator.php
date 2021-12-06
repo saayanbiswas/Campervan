@@ -5,21 +5,23 @@ session_start();
 
 $id=$_POST['Userid'];
 $pass=$_POST['Password'];
-
+$name= $_POST['Name'];
+$contact=$_POST['Contact'];
+$email=$_POST['Email'];
 $users = new User();
 
 $user= $users->fetch_user($id);
 
-if($user!=NULL)
+if($user==NULL)
 {
-    echo $user['User_id']." ".$user['User_password'];
+    $users->create_user($id,$email,$pass,$name,$contact);
     $_SESSION['user_name'] = $user['User_name'];
     $_SESSION['login']=True;
     $_SESSION['user_id']=$user['User_id'];
     header("Location:../Welcome.php");
 }
 else{
-    echo "No such user";
-    header("Location:../Login.php");
+    echo "User already exists";
+    header("Location:../SignUp.php");
 }
 ?>

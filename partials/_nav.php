@@ -10,7 +10,7 @@
             </div>
             <?php } else {?>
             <div id="login">
-                <a href="Login.php">Login</a> | <a href="#">Sign Up</a>
+            <a href="Login.php">Login</a> | <a href="SignUp.php">Sign Up</a>
             </div>
             <?php } ?>
             <ul id="nav">

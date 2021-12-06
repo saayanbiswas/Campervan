@@ -16,4 +16,19 @@ class User{
         $query->execute();
         return($query->fetch());
     }
+
+    public function create_user($user_id, $user_email, $user_password, $user_name,$user_contact){
+        global $pdo;
+        $query=$pdo->prepare("INSERT INTO users VALUES('$user_id','$user_email', '$user_password', '$user_name', '$user_contact')");
+        $query->execute();
+    }
+
+    public function Book($user_id, $Hub, $Rent_Date, $Rent_Type, $Renting_Hours, $Van, $Cost)
+    {
+        global $pdo;
+        $query=$pdo->prepare("INSERT INTO trips VALUES('$user_id','$Hub','$Rent_Date','$Rent_Type','$Renting_Hours','$Van','$Cost')");
+        $query->execute();
+    }
+    
+
 }

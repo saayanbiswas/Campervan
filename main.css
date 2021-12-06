@@ -250,5 +250,17 @@
 #loginBtn{
     margin-top:30px;
     position:relative;
-    left:70%;
+    
+}
+#BillingBox{
+    margin-top:5%;
+    margin-left:auto;
+    margin-right:auto;
+    border-style:solid;
+    width:33%;
+    height:15%;
+}
+.BillStatement{
+    text-align:center;
+    color:Blue;
 }
